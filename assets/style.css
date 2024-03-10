@@ -1,0 +1,18 @@
+* {
+    background-color: black;
+    color: white;
+}
+
+
+header {
+    background-color: rgb(0, 255, 207);
+    text-align: center;
+
+}
+
+
+
+#self-photo {
+    object-position: center;
+    width: 440.717px;
+}
