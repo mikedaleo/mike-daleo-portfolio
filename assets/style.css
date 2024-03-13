@@ -1,18 +1,126 @@
-/* * {
-    background-color: black;
-    color: white;
+:root {
+    --main-color: rgb(0, 255, 207); 
 }
 
+* {
+    font-family: "Overpass", sans-serif;
+}
 
 header {
-    background-color: rgb(0, 255, 207);
-    text-align: center;
+    display: flex;
+    height: 150px;
+    background-color: var(--main-color);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 
 }
 
+header h1 {
+    order: 1;
+    font-size: 75px;
+    color: black;
+    flex: 0 1 auto;
+}
 
+header #self-photo {
+    margin: 10px;
+    height: 150px;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 75px;
+    flex: 0 1 auto;
 
-#self-photo {
-    object-position: center;
-    width: 440.717px;
-} */
+}
+
+header nav {
+    order: 2;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 10px;
+    color: black;
+
+    
+}
+
+header nav ul li a {
+    font-size: 20px;
+    color: black;
+    flex: 0 1 auto;
+}
+
+h2 {
+    font-size: 50px;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 30px;
+}
+article  {
+    border: 1px solid var(--main-color);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#biggest {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+#biggest img {
+    width: 100%;
+    
+}
+
+.card {
+    border: 2px solid var(--main-color);
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    justify-content: center;
+
+}
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    margin: 10px;
+    text-align: center;
+}
+
+#contact-me {
+    padding: 10px;
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-me a {
+    color: white;
+}
