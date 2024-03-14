@@ -73,7 +73,7 @@ h3 {
     max-height: 300px;
     border-radius: 30px;
 }
-/* ID selector to select just the "about-me" section */
+/* ID selector to style just the "about-me" section */
 #about-me {
     border: 1px solid var(--main-color);
     padding: 20px;
@@ -91,6 +91,7 @@ h3 {
     max-width: 50%;
 }
 
+/* Class selector to style just the "projects" section */
 .projects {
     display: flex;
     flex-direction: row;
@@ -100,13 +101,14 @@ h3 {
     justify-content: center;
 }
 
+/* Class selector with a pseudoclass to style just the first element with the class "card" */
 .card:first-of-type {
     padding: 0 50px 0 50px;
     min-width: 100%;
     max-height: 600px;
 
 }
-
+/* Class selector to style all things within the "card" class */
 .card {
     background-color: #6C757D;
     border: 2px solid var(--main-color);
@@ -128,7 +130,7 @@ h3 {
     margin: 10px;
     text-align: center;
 }
-
+/* ID selector to style the "contact-me" section */
 #contact-me {
     padding: 10px;
     display: flex;
@@ -151,7 +153,7 @@ h3 {
     align-items: center;
     flex-wrap: wrap;
 }
-
+/* Element selector to style the footer */
 footer {
     padding: 5px;
     margin: 0px;
