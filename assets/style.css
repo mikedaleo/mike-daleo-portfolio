@@ -1,3 +1,4 @@
+/* A pseudoclass to select the root element of the document to store a variable to use within the rest of the code */
 :root {
     --main-color: #212529;
 }
@@ -9,7 +10,7 @@
 body {
     min-width: 100%;
 }
-
+/* Element selector to style the header of the page */
 header {
     display: flex;
     min-height: 150px;
@@ -56,7 +57,7 @@ header nav ul li a {
     color: #DEE2E6;
     flex: 0 1 auto;
 }
-
+/* Heading element selectors to adjust the size of the heading fonts */
 h2 {
     font-size: 50px;
     margin: 20px;
@@ -67,11 +68,12 @@ h3 {
 
 }
 
+/* ID selector to adjust the size of a specific image */
 #Lucy-mike {
     max-height: 300px;
     border-radius: 30px;
 }
-
+/* ID selector to select just the "about-me" section */
 #about-me {
     border: 1px solid var(--main-color);
     padding: 20px;
@@ -84,7 +86,7 @@ h3 {
     align-items: center;
 }
 
-.about-me p {
+#about-me p {
     line-height: 30px;
     max-width: 50%;
 }
