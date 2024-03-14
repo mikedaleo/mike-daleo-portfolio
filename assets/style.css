@@ -1,26 +1,31 @@
 :root {
-    --main-color: rgb(0, 255, 207); 
+    --main-color: #212529;
 }
 
 * {
     font-family: "Overpass", sans-serif;
 }
 
+body {
+    min-width: 100%;
+}
+
 header {
     display: flex;
-    height: 150px;
+    min-height: 150px;
+    min-width: 100%;
     background-color: var(--main-color);
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
 }
 
 header h1 {
     order: 1;
     font-size: 75px;
-    color: black;
+    color: #DEE2E6;
     flex: 0 1 auto;
 }
 
@@ -43,67 +48,78 @@ header nav ul li {
     padding: 10px;
     color: black;
 
-    
+
 }
 
 header nav ul li a {
     font-size: 20px;
-    color: black;
+    color: #DEE2E6;
     flex: 0 1 auto;
 }
 
 h2 {
     font-size: 50px;
-    text-decoration: underline;
-    margin: 10px;
+    margin: 20px;
 }
 
 h3 {
     font-size: 30px;
+
 }
-article  {
+
+#Lucy-mike {
+    max-height: 300px;
+    border-radius: 30px;
+}
+
+#about-me {
     border: 1px solid var(--main-color);
-    padding: 10px;
-    text-align: center;
+    padding: 20px;
     display: flex;
-    background-color: black;
+    background-color: #343A40;
     color: white;
     font-size: 20px;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+}
 
+.about-me p {
+    line-height: 30px;
+    max-width: 50%;
 }
 
 .projects {
     display: flex;
     flex-direction: row;
-    background-color: black;
+    background-color: #495057;
     color: white;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#biggest {
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
-}
+.card:first-of-type {
+    padding: 0 50px 0 50px;
+    min-width: 100%;
+    max-height: 600px;
 
-#biggest img {
-    width: 100%;
-    
 }
 
 .card {
+    background-color: #6C757D;
     border: 2px solid var(--main-color);
     width: 50%;
-    height: 400px;
+    max-height: 400px;
     overflow: hidden;
-    justify-content: center;
 
 }
+
+.card a {
+    display: block;
+}
+
 .card img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .card h3 {
@@ -119,8 +135,29 @@ article  {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-#contact-me a {
+#contact-me h2 {
+    font-size: 35px;
+}
+
+#contact-me ul li a {
+    display: flex;
     color: white;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer {
+    padding: 5px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border: 3px solid var(--main-color);
+    min-width: 100%;
 }
