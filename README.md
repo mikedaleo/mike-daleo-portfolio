@@ -14,7 +14,8 @@ For potential employers and peers to view my work that I have completed during t
 
 ## Credits
 
-N/A
+reset.css stylesheet provided by Rutgers Coding Bootcamp.
+Overpass font stylesheet provided by Google Fonts.
 
 ## License
 
